@@ -42,7 +42,7 @@ export default function Stock (props) {
                     <td><h3> {stock.name}</h3>  </td>
                     <td> <h3 className="price"> {stock.symbol}</h3> </td>
                     <td><h3> {stock.lastPrice}</h3> </td>
-                    <td> <h3>{stock.change}</h3> </td>
+                    <td> <h3  style={{color: stock.change > 0 ? "green" : "red"}}>{stock.change}</h3> </td>
                     <td>  <h3>{stock.high}</h3> </td>
                     <td>   <h3> {stock.low}</h3> </td>
                     <td>  <h3>{stock.open}</h3> </td>
