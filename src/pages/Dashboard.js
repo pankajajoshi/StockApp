@@ -35,7 +35,7 @@ export default function Dashboard (props){
                             <h2>{lastPrice}</h2>
                         </td>
                         <td>
-                            <h2>{change}</h2>
+                            <h2  style={{color: change > 0 ? "green" : "red"}}>{change}</h2>
                         </td>
                         </tr>
                     </tbody>
