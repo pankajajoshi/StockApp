@@ -24,13 +24,32 @@ export default function Stock (props) {
         const stock = stocks.filter( d => d.symbol === symbol)[0]
     return (
       <div>
-        <h3>Name: {stock.name}</h3>
-        <h3 className="price">Symbol: {stock.symbol}</h3>
-        <h3>LastPrice: {stock.lastPrice}</h3>
-        <h3>Change: {stock.change}</h3>
-        <h3>High: {stock.high}</h3>
-        <h3>Low: {stock.low}</h3>
-        <h3>Open: {stock.open}</h3>
+        <table className="stockdisplay">
+            <thead>
+                <tr>
+                    <td><h2>Name</h2></td>
+                    <td> <h2>Symbol</h2></td>
+                    <td> <h2>Last Price</h2></td>
+                    <td><h2>Change</h2></td>
+                    <td><h2>High</h2></td>
+                    <td><h2>Low</h2></td>
+                    <td><h2>Open</h2></td>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                   
+                    <td><h3> {stock.name}</h3>  </td>
+                    <td> <h3 className="price"> {stock.symbol}</h3> </td>
+                    <td><h3> {stock.lastPrice}</h3> </td>
+                    <td> <h3>{stock.change}</h3> </td>
+                    <td>  <h3>{stock.high}</h3> </td>
+                    <td>   <h3> {stock.low}</h3> </td>
+                    <td>  <h3>{stock.open}</h3> </td>
+                </tr>
+            </tbody>
+        </table>
+       
       </div>
     );
 

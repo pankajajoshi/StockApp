@@ -2,6 +2,24 @@
   font-family: sans-serif;
   text-align: center;
 }
+table {
+  border-spacing: 30px;
+  border: 3px solid black;
+  border-collapse: collapse;
+}
+
+.stockdisplay{
+  margin-top: 1%;
+  display:center;
+  text-align: center;
+}
+td,th{
+  padding-top: 10px;
+  padding-bottom: 20px;
+  padding-left: 30px;
+  padding-right: 40px;
+  border:2px solid black;
+}
 
 .nav-item {
   display: flex;
